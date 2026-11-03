@@ -45,6 +45,7 @@
 
         <!-- Company info-->
         <TextView
+            android:id="@+id/textIntro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -52,6 +53,15 @@
             android:text="@string/company_intro"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp"/>
+
+        <!-- Button that swaps the text above for my personal introduction -->
+        <Button
+            android:id="@+id/buttonIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="@string/button_intro"/>
 
         <!--  Divider line. -->
         <View
