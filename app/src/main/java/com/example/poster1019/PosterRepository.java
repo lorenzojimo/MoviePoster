@@ -123,41 +123,50 @@ public class PosterRepository {
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
-        Posters the100 = new Posters();
-        the100.id = "vietnam";
-        the100.image = R.drawable.poster3;
-        the100.name = "Vietnam Movie";
-        the100.rating = 5f;
-        the100.createdBy = "Cuong Ngo";
-        the100.story = "This is an Vietnam Movie with a young lady";
-        posters.add(the100);
+        Posters crimeMovie = new Posters();
+        crimeMovie.id = "scarface";
+        crimeMovie.image = R.drawable.poster_scarface;
+        crimeMovie.name = "Scarface";
+        crimeMovie.rating = 5f;
+        crimeMovie.createdBy = "Brian De Palma";
+        crimeMovie.story = "A Cuban immigrant rises through the Miami drug trade in the 1980s.";
+        posters.add(crimeMovie);
 
-        Posters chineseMovie = new Posters();
-        chineseMovie.id = "chinese";
-        chineseMovie.image = R.drawable.poster4;
-        chineseMovie.name = "Chinese Movie";
-        chineseMovie.rating = 4f;
-        chineseMovie.createdBy = "Zhang San";
-        chineseMovie.story = "This is an Chinese Movie with a young lady.";
-        posters.add(chineseMovie);
+        Posters funnyMovie = new Posters();
+        funnyMovie.id = "whitechicks";
+        funnyMovie.image = R.drawable.poster_whitechicks;
+        funnyMovie.name = "White Chicks";
+        funnyMovie.rating = 4f;
+        funnyMovie.createdBy = "Keenen Ivory Wayans";
+        funnyMovie.story = "Two FBI agents go undercover as wealthy socialites to stop a kidnapping.";
+        posters.add(funnyMovie);
 
-        Posters japanMovie = new Posters();
-        japanMovie.id = "japanese";
-        japanMovie.image = R.drawable.poster1;
-        japanMovie.name = "Japanese Movie";
-        japanMovie.rating = 3f;
-        japanMovie.createdBy = "Juzo Itami";
-        japanMovie.story = "This is an Japanese Movie.";
-        posters.add(japanMovie);
+        Posters actionMovie = new Posters();
+        actionMovie.id = "whitehousedown";
+        actionMovie.image = R.drawable.poster_whitehousedown;
+        actionMovie.name = "White House Down";
+        actionMovie.rating = 4f;
+        actionMovie.createdBy = "Roland Emmerich";
+        actionMovie.story = "A police officer must protect the president when armed attackers take over the White House.";
+        posters.add(actionMovie);
 
-        Posters americanMovie = new Posters();
-        americanMovie.id = "american";
-        americanMovie.image = R.drawable.poster2;
-        americanMovie.name = "American Movie";
-        americanMovie.rating = 5f;
-        americanMovie.createdBy = "Tim Burton";
-        americanMovie.story = "This is an American Movie.";
-        posters.add(americanMovie);
+        Posters vampireMovie = new Posters();
+        vampireMovie.id = "underworld";
+        vampireMovie.image = R.drawable.poster_underworld;
+        vampireMovie.name = "Underworld: Blood Wars";
+        vampireMovie.rating = 4f;
+        vampireMovie.createdBy = "Anna Foerster";
+        vampireMovie.story = "A vampire warrior fights to survive as her clan and the werewolves are at war.";
+        posters.add(vampireMovie);
+
+        Posters violenceMovie = new Posters();
+        violenceMovie.id = "equalizer";
+        violenceMovie.image = R.drawable.poster_equalizer;
+        violenceMovie.name = "The Equalizer";
+        violenceMovie.rating = 5f;
+        violenceMovie.createdBy = "Antoine Fuqua";
+        violenceMovie.story = "A quiet retired agent steps in to protect people who can't protect themselves.";
+        posters.add(violenceMovie);
 
         return posters;
 
