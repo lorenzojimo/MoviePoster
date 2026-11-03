@@ -31,5 +31,8 @@
     </plurals>
     <string name="favorites_empty">No favorites yet. Select posters on the main page and tap Add To Watchlist.</string>
     <string name="remove_favorite">Remove from favorites</string>
+    <string name="nav_pet">My Pet</string>
+    <string name="title_pet">My Pet</string>
+    <string name="pet_description">These are my three dogs out for a walk. They love exploring the neighborhood together.</string>
 
 </resources>
