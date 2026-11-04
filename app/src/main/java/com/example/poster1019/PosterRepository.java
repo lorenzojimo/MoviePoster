@@ -31,6 +31,7 @@ public class PosterRepository {
         return instance;
     }
 
+    // Loads the posters and the saved favorites, and drops favorites whose poster no longer exists.
     private PosterRepository(Context appContext) {
         allPosters = Collections.unmodifiableList(createPosters());
         favoritesStore = new FavoritesStore(appContext);
@@ -43,10 +44,12 @@ public class PosterRepository {
         favoritesStore.retainOnly(validIds);
     }
 
+    // Returns the full list of posters shown on the Main Page.
     public List<Posters> getAllPosters(){
         return allPosters;
     }
 
+    // Finds one poster by its unique id, or returns null if there is no match.
     public Posters findById(String id){
         for(Posters posters:allPosters){
             if(posters.id.equals(id)){
@@ -75,6 +78,7 @@ public class PosterRepository {
         return favorites;
     }
 
+    // Returns how many posters are currently saved as favorites.
     public int getFavoriteCount(){
         return favoritesStore.getIds().size();
     }
@@ -110,16 +114,19 @@ public class PosterRepository {
         }
     }
 
+    // Stops a page from receiving favorites updates, so it doesn't leak memory.
     public void removeFavoritesListener(FavoritesListener listener) {
         favoritesListeners.remove(listener);
     }
 
+    // Tells every registered listener (such as the badge) that the favorites list changed.
     private void notifyFavoritesChanged() {
         for(FavoritesListener listener : new ArrayList<>(favoritesListeners)){
             listener.onFavoritesChanged();
         }
     }
 
+    // Builds the list of my five movie posters: image, title, rating, director and description.
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 

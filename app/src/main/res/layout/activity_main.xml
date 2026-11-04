@@ -29,7 +29,8 @@
             android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
             app:title="@string/posters"
             app:titleCentered="true"
-            app:titleTextAppearance="@style/ToolbarTitle" />
+            app:titleTextAppearance="@style/ToolbarTitle"
+            app:logo="@drawable/ic_toolbar_logo"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
